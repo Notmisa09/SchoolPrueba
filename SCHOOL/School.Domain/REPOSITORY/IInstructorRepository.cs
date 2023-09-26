@@ -7,10 +7,10 @@ namespace School.Domain.REPOSITORY
 {
     public interface IInstructorRepository
     {
-        void Remove(Instructor instructor);
         void Save(Instructor instructor);
         void Update(Instructor instructor);
-        Instructor GetInstructor(int Id);
-        List<Instructor> GetAll();
+        void Remove(Instructor instructor);
+        void GetCourseID(Instructor instructor);
+        List<Instructor> GetCourses();
     }
 }

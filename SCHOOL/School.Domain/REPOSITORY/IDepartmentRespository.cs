@@ -7,9 +7,10 @@ namespace School.Domain.REPOSITORY
 {
     public interface IDepartmentRespository
     {
-        void Update(Department student);
-        void Remove(Department student);
-        List<Department> GetInstructors();
-        Department GetInstructor(int Id);
+        void Save(Department department);
+        void Update(Department department);
+        void Remove(Department department);
+        void GetCourseID(Department department);
+        List<Department> GetCourses();
     }
 }
